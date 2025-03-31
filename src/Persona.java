@@ -1,11 +1,13 @@
 class Persona {
     protected String nombre;
-    protected String id;
-    
-    public Persona(String nombre, String id) {
+    protected int id;
+
+    public Persona(String nombre, int id) {
         this.nombre = nombre;
         this.id = id;
     }
+
+
 
 
     public String getNombre() {
@@ -16,12 +18,13 @@ class Persona {
         this.nombre = nombre;
     }
 
-    public String getId() {
+    public int getId() {
         return this.id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
+
 
 }

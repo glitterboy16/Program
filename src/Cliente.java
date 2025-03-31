@@ -1,16 +1,15 @@
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 class Cliente extends Persona {
-    private Vector<Producto> carrito;
-    
-    public Cliente(String nombre, String id) {
+    private List<Producto> carrito;
+
+    public Cliente(String nombre, int id) {
         super(nombre, id);
-        carrito = new Vector<Producto>();
+        this.carrito = new ArrayList<>();
     }
-    
-    public Vector<Producto> getCarrito() {
+
+    public List<Producto> getCarrito() {
         return carrito;
     }
-
-
 }
